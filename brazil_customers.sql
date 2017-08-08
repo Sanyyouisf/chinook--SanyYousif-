@@ -1,2 +1,3 @@
-Select  (FirstName || ' '|| LastName) AS CustomersFromBrazil from Customer
+Select  (FirstName || ' '|| LastName) AS CustomersFromBrazil 
+from Customer
 where Country = 'Brazil' 
