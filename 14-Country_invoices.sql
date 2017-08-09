@@ -2,7 +2,7 @@
 . HINT: GROUP BY*/
 
 select 		count (BillingCountry)As NumberOfInvoices,
-				BillingCountry
+		BillingCountry
 from 		Invoice
-Group By (BillingCountry)
+Group By 	(BillingCountry)
 
