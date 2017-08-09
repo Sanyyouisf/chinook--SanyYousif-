@@ -2,11 +2,11 @@
 The Playlist name should be include on the resulant table.*/
 
 select  	count(Track.TrackId) TotalNumberOfTracks,
-				(Playlist.Name) As PlaylistName
+		(Playlist.Name) As PlaylistName
 from Track 
-			Join PlaylistTrack
-				on Track.TrackId = PlaylistTrack.TrackId
-			Join Playlist 
-				on Playlist.PlaylistId = PlaylistTrack.PlaylistId 
+	Join PlaylistTrack
+		on Track.TrackId = PlaylistTrack.TrackId
+	Join Playlist 
+		on Playlist.PlaylistId = PlaylistTrack.PlaylistId 
 Group By Playlist.Name
 				
