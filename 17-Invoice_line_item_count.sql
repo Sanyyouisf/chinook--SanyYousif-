@@ -2,10 +2,10 @@
 but includes the # of invoice line items*/
 
 select Invoice.*,
-			Count(InvoiceLine.InvoiceLineId)As InvoiceLineNumber
+	Count(InvoiceLine.InvoiceLineId)As InvoiceLineNumber
 from Invoice 
-			join InvoiceLine
-				on Invoice.InvoiceId = InvoiceLine.InvoiceId
+	join InvoiceLine
+		on Invoice.InvoiceId = InvoiceLine.InvoiceId
 Group By Invoice.InvoiceId
 
 				
