@@ -1,5 +1,6 @@
 /* 24-Provide a query that shows the most purchased track of 2013.*/
 
+<<<<<<< HEAD
 -- select  (Track.Name) As TrackName,
 -- 			Sum(InvoiceLine.Quantity) As NumberOfPurchase
 -- from Track 
@@ -23,3 +24,4 @@ where  strftime('%Y',InvoiceDate)='2013'
 Group By Track.TrackId
 order By NumberOfpurchase desc
 limit 1
+
