@@ -1,7 +1,7 @@
-/*19-Which sales agent made the most in sales in 2009?*/
+/*19-1-Which sales agent made the most in sales in 2009?*/
 
 select 	(Employee.FirstName || ' '|| Employee.LastName) AS SalesAgentName,  
-			Count(Invoice.Total) As TotalSales
+			Sum(Invoice.Total) As TotalSales
 from 	Employee
 			Join Customer
 				on Employee.EmployeeId = Customer.SupportRepId
