@@ -1,6 +1,6 @@
 /* 24-Provide a query that shows the most purchased track of 2013.*/
 
-<<<<<<< HEAD
+
 -- select  (Track.Name) As TrackName,
 -- 			Sum(InvoiceLine.Quantity) As NumberOfPurchase
 -- from Track 
